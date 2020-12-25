@@ -1,5 +1,5 @@
 # external-ip
-Upload external IP so you can find your devices elsewhere
+Report the public IP of your device by uploading a file to Google Storage.
 
 ## Install
 
