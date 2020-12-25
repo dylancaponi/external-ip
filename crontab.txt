@@ -1,0 +1,1 @@
+*/10 * * * * cd public-ip/ && venv/bin/python main.py > log.txt 2>&1
