@@ -23,9 +23,9 @@ except (json.decoder.JSONDecodeError, FileNotFoundError) as e:
     data = {}
 
 # Get external IP
-r = requests.get('http://ifconfig.me')
+r = requests.get('https://api.ipify.org?format=json')
 r.raise_for_status()
-external_ip = r.text
+external_ip = r.json()['ip']
 # TODO - confirm it is in IP format
 
 # Quit if IP has not changed
